@@ -319,6 +319,78 @@ a:hover { color: var(--accent-secondary) }
   border-radius: 12px;
 }
 
+/* Click-to-Play Overlay */
+.game-play-overlay {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  background: #000;
+  cursor: pointer;
+}
+
+.game-poster {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.game-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+  z-index: 2;
+}
+
+.game-play-btn svg {
+  width: 38px;
+  height: 38px;
+  color: #333;
+  margin-left: 4px;
+}
+
+.game-play-btn:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 6px 30px rgba(124, 58, 237, 0.5);
+}
+
+.game-play-btn:active {
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
+.game-poster-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+@media (max-width: 575px) {
+  .game-play-btn { width: 64px; height: 64px }
+  .game-play-btn svg { width: 30px; height: 30px }
+  .game-poster-title { font-size: 0.9rem; padding: 15px }
+}
+
 .fullscreen-btn {
   position: absolute;
   bottom: 12px;

@@ -13,30 +13,107 @@
 <link rel="canonical" href="https://unblocked-games-platform.github.io/game/duck-life/">
 <link rel="stylesheet" href="../../css/style.css">
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "VideoGame",
-  "name": "Duck Life",
-  "description": "Duck Life - Free Action Games game. Play unblocked in your browser. Gripping gameplay, no sign-up required.",
-  "url": "https://unblocked-games-platform.github.io/game/duck-life/",
-  "image": "https://cool77.com/img/duck-life-small-100.webp",
-  "genre": [
-    "Action Mini Games",
-    "Arcade Games",
-    "Casual Games",
-    "Endless Runner Games",
-    "Racing Games",
-    "Simulation Games"
-  ],
-  "playMode": "SinglePlayer",
-  "applicationCategory": "Game",
-  "operatingSystem": "Web Browser",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "Duck Life",
+    "description": "Duck Life - Free Action Games game. Play unblocked in your browser. Gripping gameplay, no sign-up required.",
+    "url": "https://unblocked-games-platform.github.io/game/duck-life/",
+    "image": "https://cool77.com/img/duck-life-small-100.webp",
+    "genre": [
+      "Action Mini Games",
+      "Arcade Games",
+      "Casual Games",
+      "Endless Runner Games",
+      "Racing Games",
+      "Simulation Games"
+    ],
+    "playMode": "SinglePlayer",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web Browser",
+    "gamePlatform": "Web Browser",
+    "inLanguage": "en",
+    "isFamilyFriendly": true,
+    "datePublished": "2025-08-16",
+    "author": {
+      "@type": "Organization",
+      "name": "Unblocked Games Platform",
+      "url": "https://unblocked-games-platform.github.io"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Unblocked Games Platform",
+      "url": "https://unblocked-games-platform.github.io"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.2,
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": 162
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://unblocked-games-platform.github.io/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Action Mini Games",
+        "item": "https://unblocked-games-platform.github.io/c/action-mini-games/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Duck Life"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Duck Life free to play?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Duck Life is completely free to play online. No downloads, no sign-ups, and no hidden fees. Just open the page and start playing instantly in your browser."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I play Duck Life unblocked at school?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Duck Life is available unblocked and works on most school and work networks. It runs directly in your web browser with no additional software needed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What devices can I play Duck Life on?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Duck Life works on any device with a modern web browser including Windows, Mac, Chromebook, and mobile devices like iPhone and Android."
+        }
+      }
+    ]
   }
-}
+]
 </script>
 </head>
 <body>
@@ -56,14 +133,15 @@
     <div class="breadcrumb"><a href="../../index.html">Home</a> &rsaquo; <a href="../../c/action-mini-games/index.html">Action Mini Games</a> &rsaquo; Duck Life</div>
     <h1>Duck Life Unblocked</h1>
   </div>
-  <div class="game-frame-wrap" id="game-frame-wrap">
-    <iframe id="game-frame"
-      src="https://minigamesville.com/play/duck-life/"
-      class="game-iframe"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; gamepad *;"
-      allowfullscreen loading="lazy">
-    </iframe>
-    <button id="fullscreen-btn" class="fullscreen-btn">&#x26F6; Fullscreen</button>
+  <div class="game-frame-wrap" id="game-frame-wrap" data-src="https://minigamesville.com/play/duck-life/">
+    <div class="game-play-overlay" id="game-play-overlay">
+      <img src="https://cool77.com/img/duck-life-small-100.webp" alt="Duck Life" class="game-poster" fetchpriority="high" loading="eager" decoding="async">
+      <button class="game-play-btn" aria-label="Play Duck Life">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+      <div class="game-poster-title">Duck Life</div>
+    </div>
+    <button id="fullscreen-btn" class="fullscreen-btn" style="display:none">&#x26F6; Fullscreen</button>
   </div>
   <div class="game-description">
     <h2>About Duck Life</h2>
@@ -84,7 +162,7 @@
       <div class="game-card" data-title="hospital stories: doctor rugby" data-categories="action mini games|casual games|simulation games">
   <a href="../../game/hospital-stories-doctor-rugby/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Hospital_Stories__Doctor_Rugby.png?lossy=2&amp;strip=1&amp;webp=1" alt="Hospital Stories: Doctor Rugby" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Hospital_Stories__Doctor_Rugby-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Hospital_Stories__Doctor_Rugby-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Hospital_Stories__Doctor_Rugby-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Hospital Stories: Doctor Rugby" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -97,7 +175,7 @@
     <div class="game-card" data-title="12 mini battles 2" data-categories="2 player games|action mini games|arcade games|casual games|multiplayer games">
   <a href="../../game/12-mini-battles-2/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/12_Mini_Battles_2.png?lossy=2&amp;strip=1&amp;webp=1" alt="12 Mini Battles 2" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/12_Mini_Battles_2-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/12_Mini_Battles_2-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/12_Mini_Battles_2-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="12 Mini Battles 2" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -110,7 +188,7 @@
     <div class="game-card" data-title="labubu: mini games" data-categories="action mini games|arcade games|casual games|endless runner games|platformer games|puzzle games">
   <a href="../../game/labubu-mini-games/index.html">
     <div class="thumb">
-      <img data-src="https://cool77.com/img/labubu-mini-games-small-100.webp" alt="Labubu: Mini Games" width="300" height="300" loading="lazy">
+      <img data-src="https://cool77.com/img/labubu-mini-games-small-100-300x300.webp" data-srcset="https://cool77.com/img/labubu-mini-games-small-100-150x150.webp 150w, https://cool77.com/img/labubu-mini-games-small-100-300x300.webp 300w" sizes="(max-width:575px) 150px, 300px" alt="Labubu: Mini Games" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -123,7 +201,7 @@
     <div class="game-card" data-title="duel of chance" data-categories="action mini games|arcade games|casual games">
   <a href="../../game/duel-of-chance/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Duel_of_Chance.png?lossy=2&amp;strip=1&amp;webp=1" alt="Duel of Chance" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Duel_of_Chance-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Duel_of_Chance-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Duel_of_Chance-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Duel of Chance" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -136,7 +214,7 @@
     <div class="game-card" data-title="murder" data-categories="action mini games|arcade games|casual games">
   <a href="../../game/murder/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Murder.png?lossy=2&amp;strip=1&amp;webp=1" alt="Murder" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Murder-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Murder-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Murder-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Murder" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -149,7 +227,7 @@
     <div class="game-card" data-title="master assassin" data-categories="action games|action mini games|casual games|puzzle games">
   <a href="../../game/master-assassin/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Master_Assassin.png?lossy=2&amp;strip=1&amp;webp=1" alt="Master Assassin" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Master_Assassin-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Master_Assassin-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Master_Assassin-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Master Assassin" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -162,7 +240,7 @@
     <div class="game-card" data-title="crazy party" data-categories="action mini games|arcade games|casual games|multiplayer games">
   <a href="../../game/crazy-party/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Crazy_Party.png?lossy=2&amp;strip=1&amp;webp=1" alt="Crazy Party" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Crazy_Party-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Crazy_Party-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Crazy_Party-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Crazy Party" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -175,7 +253,7 @@
     <div class="game-card" data-title="handless millionaire" data-categories="action mini games|arcade games|casual games">
   <a href="../../game/handless-millionaire/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Handless-Millionaire.png?lossy=2&amp;strip=1&amp;webp=1" alt="Handless Millionaire" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Handless-Millionaire-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Handless-Millionaire-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Handless-Millionaire-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Handless Millionaire" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -188,7 +266,7 @@
     <div class="game-card" data-title="duck life 2" data-categories="action mini games|arcade games|casual games|racing games|simulation games">
   <a href="../../game/duck-life-2/index.html">
     <div class="thumb">
-      <img data-src="https://cool77.com/img/duck-life-2-small-100.webp" alt="Duck Life 2" width="300" height="300" loading="lazy">
+      <img data-src="https://cool77.com/img/duck-life-2-small-100-300x300.webp" data-srcset="https://cool77.com/img/duck-life-2-small-100-150x150.webp 150w, https://cool77.com/img/duck-life-2-small-100-300x300.webp 300w" sizes="(max-width:575px) 150px, 300px" alt="Duck Life 2" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -201,7 +279,7 @@
     <div class="game-card" data-title="life: the game - stay safe" data-categories="action mini games|arcade games|casual games|simulation games">
   <a href="../../game/life-the-game-stay-safe/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Life__The_Game___Stay_Safe.png?lossy=2&amp;strip=1&amp;webp=1" alt="Life: The Game - Stay Safe" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Life__The_Game___Stay_Safe-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Life__The_Game___Stay_Safe-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Life__The_Game___Stay_Safe-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Life: The Game - Stay Safe" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -214,7 +292,7 @@
     <div class="game-card" data-title="my flock friends" data-categories="action mini games|casual games|simulation games">
   <a href="../../game/my-flock-friends/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/My_Flock_Friends.png?lossy=2&amp;strip=1&amp;webp=1" alt="My Flock Friends" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/My_Flock_Friends-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/My_Flock_Friends-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/My_Flock_Friends-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="My Flock Friends" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -227,7 +305,7 @@
     <div class="game-card" data-title="bomb hunters" data-categories="action games|action mini games|arcade games|casual games|puzzle games">
   <a href="../../game/bomb-hunters/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Bomb_Hunters.png?lossy=2&amp;strip=1&amp;webp=1" alt="Bomb Hunters" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Bomb_Hunters-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Bomb_Hunters-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Bomb_Hunters-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Bomb Hunters" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -245,7 +323,7 @@
       <div class="game-card" data-title="bunny market" data-categories="casual games|clicker games|simulation games">
   <a href="../../game/bunny-market/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Bunny_Market.png?lossy=2&amp;strip=1&amp;webp=1" alt="Bunny Market" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Bunny_Market-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Bunny_Market-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Bunny_Market-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Bunny Market" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -258,7 +336,7 @@
     <div class="game-card" data-title="qwb" data-categories="arcade games|casual games|endless runner games|puzzle games">
   <a href="../../game/qwb/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/QWB.png?lossy=2&amp;strip=1&amp;webp=1" alt="QWB" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/QWB-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/QWB-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/QWB-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="QWB" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -271,7 +349,7 @@
     <div class="game-card" data-title="rustyard" data-categories="casual games|platformer games|puzzle games">
   <a href="../../game/rustyard/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Rustyard.png?lossy=2&amp;strip=1&amp;webp=1" alt="Rustyard" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Rustyard-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Rustyard-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Rustyard-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Rustyard" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -284,7 +362,7 @@
     <div class="game-card" data-title="forgotten hill: the wardrobe 4" data-categories="adventure games|escape games|horror games|puzzle games">
   <a href="../../game/forgotten-hill-the-wardrobe-4/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Forgotten_Hill__The_Wardrobe_4.png?lossy=2&amp;strip=1&amp;webp=1" alt="Forgotten Hill: The Wardrobe 4" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Forgotten_Hill__The_Wardrobe_4-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Forgotten_Hill__The_Wardrobe_4-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Forgotten_Hill__The_Wardrobe_4-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Forgotten Hill: The Wardrobe 4" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -297,7 +375,7 @@
     <div class="game-card" data-title="splatmans" data-categories="2 player games|action games|arcade games|casual games|multiplayer games|shooting games|stickman games">
   <a href="../../game/splatmans/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Splatmans.png?lossy=2&amp;strip=1&amp;webp=1" alt="Splatmans" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Splatmans-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Splatmans-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Splatmans-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Splatmans" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -310,7 +388,7 @@
     <div class="game-card" data-title="fly wings flight simulator" data-categories="casual games|simulation games">
   <a href="../../game/fly-wings-flight-simulator/index.html">
     <div class="thumb">
-      <img data-src="https://cool77.com/img/fly-wings-flight-simulator-small-100.webp" alt="Fly Wings Flight Simulator" width="300" height="300" loading="lazy">
+      <img data-src="https://cool77.com/img/fly-wings-flight-simulator-small-100-300x300.webp" data-srcset="https://cool77.com/img/fly-wings-flight-simulator-small-100-150x150.webp 150w, https://cool77.com/img/fly-wings-flight-simulator-small-100-300x300.webp 300w" sizes="(max-width:575px) 150px, 300px" alt="Fly Wings Flight Simulator" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -323,7 +401,7 @@
     <div class="game-card" data-title="planet plummet" data-categories="arcade games|casual games|puzzle games">
   <a href="../../game/planet-plummet/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Planet_Plummet.png?lossy=2&amp;strip=1&amp;webp=1" alt="Planet Plummet" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Planet_Plummet-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Planet_Plummet-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Planet_Plummet-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Planet Plummet" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -336,7 +414,7 @@
     <div class="game-card" data-title="sticker album" data-categories="casual games|decoration games|puzzle games">
   <a href="../../game/sticker-album/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Sticker_Album.png?lossy=2&amp;strip=1&amp;webp=1" alt="Sticker Album" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Sticker_Album-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Sticker_Album-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Sticker_Album-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Sticker Album" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -349,7 +427,7 @@
     <div class="game-card" data-title="drive mad" data-categories="car games|driving games">
   <a href="../../game/drive-mad/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Drive_Mad.png?lossy=2&amp;strip=1&amp;webp=1" alt="Drive Mad" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Drive_Mad-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Drive_Mad-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Drive_Mad-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Drive Mad" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -362,7 +440,7 @@
     <div class="game-card" data-title="moto x3m 2" data-categories="arcade games|bike mini games|racing games">
   <a href="../../game/moto-x3m-2/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Moto-X3M-2.png?lossy=2&amp;strip=1&amp;webp=1" alt="Moto X3M 2" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Moto-X3M-2-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Moto-X3M-2-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Moto-X3M-2-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Moto X3M 2" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -375,7 +453,7 @@
     <div class="game-card" data-title="killer snake" data-categories="action games|arcade games|casual games|endless runner games">
   <a href="../../game/killer-snake/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Killer_Snake.png?lossy=2&amp;strip=1&amp;webp=1" alt="Killer Snake" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Killer_Snake-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Killer_Snake-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Killer_Snake-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Killer Snake" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -388,7 +466,7 @@
     <div class="game-card" data-title="stack smash" data-categories="action games|arcade games|casual games|endless runner games">
   <a href="../../game/stack-smash/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Stack-Smash.png?lossy=2&amp;strip=1&amp;webp=1" alt="Stack Smash" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Stack-Smash-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Stack-Smash-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Stack-Smash-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Stack Smash" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -401,7 +479,7 @@
     <div class="game-card" data-title="funny pet haircut" data-categories="casual games|dress up games|girl games|simulation games">
   <a href="../../game/funny-pet-haircut/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Funny_Pet_Haircut.png?lossy=2&amp;strip=1&amp;webp=1" alt="Funny Pet Haircut" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Funny_Pet_Haircut-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Funny_Pet_Haircut-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Funny_Pet_Haircut-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Funny Pet Haircut" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -414,7 +492,7 @@
     <div class="game-card" data-title="forgotten hill: the wardrobe 3" data-categories="adventure games|escape games|horror games|puzzle games">
   <a href="../../game/forgotten-hill-the-wardrobe-3/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Forgotten_Hill__The_Wardrobe_3.png?lossy=2&amp;strip=1&amp;webp=1" alt="Forgotten Hill: The Wardrobe 3" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Forgotten_Hill__The_Wardrobe_3-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Forgotten_Hill__The_Wardrobe_3-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Forgotten_Hill__The_Wardrobe_3-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Forgotten Hill: The Wardrobe 3" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -427,7 +505,7 @@
     <div class="game-card" data-title="sort the court!" data-categories="casual games|simulation games|strategy games">
   <a href="../../game/sort-the-court/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Sort-the-Court.png?lossy=2&amp;strip=1&amp;webp=1" alt="Sort the Court!" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Sort-the-Court-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Sort-the-Court-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Sort-the-Court-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Sort the Court!" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -440,7 +518,7 @@
     <div class="game-card" data-title="screw jam puzzle" data-categories="casual games|puzzle games">
   <a href="../../game/screw-jam-puzzle/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Screw_Jam_Puzzle.png?lossy=2&amp;strip=1&amp;webp=1" alt="Screw Jam Puzzle" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Screw_Jam_Puzzle-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Screw_Jam_Puzzle-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Screw_Jam_Puzzle-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Screw Jam Puzzle" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -453,7 +531,7 @@
     <div class="game-card" data-title="indian uphill bus simulator 3d" data-categories="car games|driving games|simulation games">
   <a href="../../game/indian-uphill-bus-simulator-3d/index.html">
     <div class="thumb">
-      <img data-src="https://cool77.com/img/indian-uphill-bus-simulator-3d-small-100.webp" alt="Indian Uphill Bus Simulator 3D" width="300" height="300" loading="lazy">
+      <img data-src="https://cool77.com/img/indian-uphill-bus-simulator-3d-small-100-300x300.webp" data-srcset="https://cool77.com/img/indian-uphill-bus-simulator-3d-small-100-150x150.webp 150w, https://cool77.com/img/indian-uphill-bus-simulator-3d-small-100-300x300.webp 300w" sizes="(max-width:575px) 150px, 300px" alt="Indian Uphill Bus Simulator 3D" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -466,7 +544,7 @@
     <div class="game-card" data-title="moto x3m spooky land" data-categories="action games|bike mini games|horror games|racing games">
   <a href="../../game/moto-x3m-spooky-land/index.html">
     <div class="thumb">
-      <img data-src="https://cool77.com/img/moto-x3m-spooky-land-small-100.webp" alt="Moto X3M Spooky Land" width="300" height="300" loading="lazy">
+      <img data-src="https://cool77.com/img/moto-x3m-spooky-land-small-100-300x300.webp" data-srcset="https://cool77.com/img/moto-x3m-spooky-land-small-100-150x150.webp 150w, https://cool77.com/img/moto-x3m-spooky-land-small-100-300x300.webp 300w" sizes="(max-width:575px) 150px, 300px" alt="Moto X3M Spooky Land" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -479,7 +557,7 @@
     <div class="game-card" data-title="sink it" data-categories="2 player games|arcade games|casual games|multiplayer games|shooting games">
   <a href="../../game/sink-it/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Sink_It.png?lossy=2&amp;strip=1&amp;webp=1" alt="Sink It" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Sink_It-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Sink_It-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Sink_It-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Sink It" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -492,7 +570,7 @@
     <div class="game-card" data-title="wheelie bike" data-categories="arcade games|bike mini games|casual games">
   <a href="../../game/wheelie-bike/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/07/Wheelie-Bike-Thumbnail.webp?lossy=2&amp;strip=1&amp;webp=1" alt="Wheelie Bike" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/07/Wheelie-Bike-Thumbnail-300x300.webp?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/07/Wheelie-Bike-Thumbnail-150x150.webp?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/07/Wheelie-Bike-Thumbnail-300x300.webp?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Wheelie Bike" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -505,7 +583,7 @@
     <div class="game-card" data-title="twice!" data-categories="casual games|puzzle games">
   <a href="../../game/twice/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Twice_.png?lossy=2&amp;strip=1&amp;webp=1" alt="Twice!" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Twice_-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Twice_-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Twice_-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Twice!" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -518,7 +596,7 @@
     <div class="game-card" data-title="woody sort" data-categories="casual games|puzzle games">
   <a href="../../game/woody-sort/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Woody_Sort.png?lossy=2&amp;strip=1&amp;webp=1" alt="Woody Sort" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Woody_Sort-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Woody_Sort-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Woody_Sort-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Woody Sort" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -531,7 +609,7 @@
     <div class="game-card" data-title="circuroid" data-categories="action games|arcade games|casual games|shooting games">
   <a href="../../game/circuroid/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Circuroid.png?lossy=2&amp;strip=1&amp;webp=1" alt="Circuroid" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Circuroid-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Circuroid-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Circuroid-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Circuroid" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -544,7 +622,7 @@
     <div class="game-card" data-title="chess" data-categories="2 player games|board games|strategy games">
   <a href="../../game/chess/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Chess.png?lossy=2&amp;strip=1&amp;webp=1" alt="Chess" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Chess-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Chess-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Chess-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Chess" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>

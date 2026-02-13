@@ -7,10 +7,27 @@
 
   function loadImage(img) {
     if (!img.dataset.src) return;
+    // Set srcset first if available, then src
+    if (img.dataset.srcset) {
+      img.srcset = img.dataset.srcset;
+      img.removeAttribute('data-srcset');
+    }
     img.src = img.dataset.src;
     img.removeAttribute('data-src');
     img.onload = function() { img.classList.add('loaded'); };
     img.onerror = function() {
+      // If resized version fails, try the original full-size image
+      var origSrc = img.src.replace(/-\d+x\d+\./, '.');
+      if (origSrc !== img.src) {
+        img.srcset = '';
+        img.src = origSrc;
+        img.onerror = function() {
+          img.style.display = 'none';
+          var placeholder = img.parentElement.querySelector('.thumb-placeholder');
+          if (placeholder) placeholder.style.display = 'flex';
+        };
+        return;
+      }
       img.style.display = 'none';
       var placeholder = img.parentElement.querySelector('.thumb-placeholder');
       if (placeholder) placeholder.style.display = 'flex';
@@ -245,6 +262,54 @@
     });
   }
 
+  /* ========== Click-to-Play Game Launcher ========== */
+  function initGameLauncher() {
+    var overlay = document.getElementById('game-play-overlay');
+    var wrap = document.getElementById('game-frame-wrap');
+    if (!overlay || !wrap) return;
+
+    overlay.addEventListener('click', function() {
+      var gameUrl = wrap.dataset.src;
+      if (!gameUrl) return;
+
+      // Instant visual feedback
+      var playBtn = overlay.querySelector('.game-play-btn');
+      if (playBtn) {
+        playBtn.style.transform = 'translate(-50%, -50%) scale(0.9)';
+        playBtn.style.opacity = '0.7';
+      }
+
+      // Yield to paint, then do heavy work
+      requestAnimationFrame(function() {
+        setTimeout(function() {
+          // Remove overlay
+          overlay.remove();
+
+          // Create iframe
+          var iframe = document.createElement('iframe');
+          iframe.id = 'game-frame';
+          iframe.className = 'game-iframe';
+          iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; gamepad *;');
+          iframe.setAttribute('allowfullscreen', '');
+          iframe.setAttribute('title', document.title);
+
+          // Insert iframe before fullscreen button
+          var fsBtn = document.getElementById('fullscreen-btn');
+          wrap.insertBefore(iframe, fsBtn);
+
+          // Set src after DOM insertion
+          iframe.src = gameUrl;
+
+          // Show fullscreen button
+          if (fsBtn) fsBtn.style.display = '';
+
+          // Smooth scroll to game
+          wrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 0);
+      });
+    });
+  }
+
   /* ========== Fullscreen Toggle (real browser fullscreen) ========== */
   function initFullscreen() {
     var btn = document.getElementById('fullscreen-btn');
@@ -292,6 +357,7 @@
     initSearch();
     initCategoryTabs();
     initLoadMore();
+    initGameLauncher();
     initFullscreen();
   });
 

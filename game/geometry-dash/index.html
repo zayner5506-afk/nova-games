@@ -13,28 +13,105 @@
 <link rel="canonical" href="https://unblocked-games-platform.github.io/game/geometry-dash/">
 <link rel="stylesheet" href="../../css/style.css">
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "VideoGame",
-  "name": "Geometry Dash",
-  "description": "Play Geometry Dash unblocked for free online. Dynamic Arcade Games game with no downloads needed. Start playing instantly!",
-  "url": "https://unblocked-games-platform.github.io/game/geometry-dash/",
-  "image": "https://cool77.com/img/geometry-dash-small-100.webp",
-  "genre": [
-    "Arcade Games",
-    "Casual Games",
-    "Endless Runner Games",
-    "Platformer Games"
-  ],
-  "playMode": "SinglePlayer",
-  "applicationCategory": "Game",
-  "operatingSystem": "Web Browser",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "Geometry Dash",
+    "description": "Play Geometry Dash unblocked for free online. Dynamic Arcade Games game with no downloads needed. Start playing instantly!",
+    "url": "https://unblocked-games-platform.github.io/game/geometry-dash/",
+    "image": "https://cool77.com/img/geometry-dash-small-100.webp",
+    "genre": [
+      "Arcade Games",
+      "Casual Games",
+      "Endless Runner Games",
+      "Platformer Games"
+    ],
+    "playMode": "SinglePlayer",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web Browser",
+    "gamePlatform": "Web Browser",
+    "inLanguage": "en",
+    "isFamilyFriendly": true,
+    "datePublished": "2025-08-16",
+    "author": {
+      "@type": "Organization",
+      "name": "Unblocked Games Platform",
+      "url": "https://unblocked-games-platform.github.io"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Unblocked Games Platform",
+      "url": "https://unblocked-games-platform.github.io"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.7,
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": 297
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://unblocked-games-platform.github.io/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Arcade Games",
+        "item": "https://unblocked-games-platform.github.io/c/arcade-games/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Geometry Dash"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Geometry Dash free to play?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Geometry Dash is completely free to play online. No downloads, no sign-ups, and no hidden fees. Just open the page and start playing instantly in your browser."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I play Geometry Dash unblocked at school?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Geometry Dash is available unblocked and works on most school and work networks. It runs directly in your web browser with no additional software needed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What devices can I play Geometry Dash on?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Geometry Dash works on any device with a modern web browser including Windows, Mac, Chromebook, and mobile devices like iPhone and Android."
+        }
+      }
+    ]
   }
-}
+]
 </script>
 </head>
 <body>
@@ -54,14 +131,15 @@
     <div class="breadcrumb"><a href="../../index.html">Home</a> &rsaquo; <a href="../../c/arcade-games/index.html">Arcade Games</a> &rsaquo; Geometry Dash</div>
     <h1>Geometry Dash Unblocked</h1>
   </div>
-  <div class="game-frame-wrap" id="game-frame-wrap">
-    <iframe id="game-frame"
-      src="https://minigamesville.com/play/geometry-dash/"
-      class="game-iframe"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; gamepad *;"
-      allowfullscreen loading="lazy">
-    </iframe>
-    <button id="fullscreen-btn" class="fullscreen-btn">&#x26F6; Fullscreen</button>
+  <div class="game-frame-wrap" id="game-frame-wrap" data-src="https://minigamesville.com/play/geometry-dash/">
+    <div class="game-play-overlay" id="game-play-overlay">
+      <img src="https://cool77.com/img/geometry-dash-small-100.webp" alt="Geometry Dash" class="game-poster" fetchpriority="high" loading="eager" decoding="async">
+      <button class="game-play-btn" aria-label="Play Geometry Dash">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+      <div class="game-poster-title">Geometry Dash</div>
+    </div>
+    <button id="fullscreen-btn" class="fullscreen-btn" style="display:none">&#x26F6; Fullscreen</button>
   </div>
   <div class="game-description">
     <h2>About Geometry Dash</h2>
@@ -80,7 +158,7 @@
       <div class="game-card" data-title="9 ball pool" data-categories="arcade games|casual games|sports games">
   <a href="../../game/9-ball-pool/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/9_Ball_Pool.png?lossy=2&amp;strip=1&amp;webp=1" alt="9 Ball Pool" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/9_Ball_Pool-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/9_Ball_Pool-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/9_Ball_Pool-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="9 Ball Pool" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -93,7 +171,7 @@
     <div class="game-card" data-title="x parkour" data-categories="arcade games|platformer games|stickman games">
   <a href="../../game/x-parkour/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/X-Parkour.png?lossy=2&amp;strip=1&amp;webp=1" alt="X Parkour" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/X-Parkour-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/X-Parkour-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/X-Parkour-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="X Parkour" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -106,7 +184,7 @@
     <div class="game-card" data-title="hill climb racing lite" data-categories="arcade games|car games|casual games|driving games|endless runner games|racing games|trending games">
   <a href="../../game/hill-climb-racing-lite/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Hill_Climb_Racing_Lite.png?lossy=2&amp;strip=1&amp;webp=1" alt="Hill Climb Racing Lite" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Hill_Climb_Racing_Lite-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Hill_Climb_Racing_Lite-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Hill_Climb_Racing_Lite-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Hill Climb Racing Lite" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -119,7 +197,7 @@
     <div class="game-card" data-title="mad car racing" data-categories="arcade games|car games|casual games|driving games|racing games">
   <a href="../../game/mad-car-racing/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Mad_Car_Racing.png?lossy=2&amp;strip=1&amp;webp=1" alt="Mad Car Racing" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Mad_Car_Racing-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Mad_Car_Racing-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Mad_Car_Racing-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Mad Car Racing" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -132,7 +210,7 @@
     <div class="game-card" data-title="shootz" data-categories="action games|arcade games|casual games|shooting games">
   <a href="../../game/shootz/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/ShootZ.png?lossy=2&amp;strip=1&amp;webp=1" alt="ShootZ" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/ShootZ-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/ShootZ-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/ShootZ-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="ShootZ" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -145,7 +223,7 @@
     <div class="game-card" data-title="thumb fighter" data-categories="2 player games|arcade games|casual games|fighting games|multiplayer games">
   <a href="../../game/thumb-fighter/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Thumb-Fighter-1.png?lossy=2&amp;strip=1&amp;webp=1" alt="Thumb Fighter" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Thumb-Fighter-1-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Thumb-Fighter-1-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Thumb-Fighter-1-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Thumb Fighter" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -158,7 +236,7 @@
     <div class="game-card" data-title="bro ski" data-categories="arcade games|casual games|endless runner games|racing games|sports games">
   <a href="../../game/bro-ski/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/BRO_SKI.png?lossy=2&amp;strip=1&amp;webp=1" alt="BRO SKI" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/BRO_SKI-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/BRO_SKI-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/BRO_SKI-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="BRO SKI" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -171,7 +249,7 @@
     <div class="game-card" data-title="superbike hero" data-categories="arcade games|casual games|driving games|racing games">
   <a href="../../game/superbike-hero/index.html">
     <div class="thumb">
-      <img data-src="https://cool77.com/img/superbike-hero-small-100.webp" alt="Superbike Hero" width="300" height="300" loading="lazy">
+      <img data-src="https://cool77.com/img/superbike-hero-small-100-300x300.webp" data-srcset="https://cool77.com/img/superbike-hero-small-100-150x150.webp 150w, https://cool77.com/img/superbike-hero-small-100-300x300.webp 300w" sizes="(max-width:575px) 150px, 300px" alt="Superbike Hero" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -184,7 +262,7 @@
     <div class="game-card" data-title="dungeon quest" data-categories="action games|adventure games|arcade games|casual games|puzzle games">
   <a href="../../game/dungeon-quest/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Dungeon_Quest.png?lossy=2&amp;strip=1&amp;webp=1" alt="Dungeon Quest" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Dungeon_Quest-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Dungeon_Quest-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Dungeon_Quest-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Dungeon Quest" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -197,7 +275,7 @@
     <div class="game-card" data-title="robots market" data-categories="arcade games|casual games|clicker games|simulation games|strategy games">
   <a href="../../game/robots-market/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Robots_Market.png?lossy=2&amp;strip=1&amp;webp=1" alt="Robots Market" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Robots_Market-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Robots_Market-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Robots_Market-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Robots Market" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -210,7 +288,7 @@
     <div class="game-card" data-title="slopey" data-categories="arcade games|casual games|endless runner games">
   <a href="../../game/slopey/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Slopey.png?lossy=2&amp;strip=1&amp;webp=1" alt="Slopey" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Slopey-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Slopey-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Slopey-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Slopey" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -223,7 +301,7 @@
     <div class="game-card" data-title="quivershot" data-categories="action games|arcade games|casual games|shooting games">
   <a href="../../game/quivershot/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Quivershot.png?lossy=2&amp;strip=1&amp;webp=1" alt="Quivershot" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Quivershot-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Quivershot-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Quivershot-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Quivershot" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -241,7 +319,7 @@
       <div class="game-card" data-title="burnin&#x27; rubber crash n&#x27; burn" data-categories="action games|arcade games|car games|casual games|driving games|racing games">
   <a href="../../game/burnin-rubber-crash-n-burn/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Burnin__Rubber_Crash_n__Burn.png?lossy=2&amp;strip=1&amp;webp=1" alt="Burnin&#x27; Rubber Crash n&#x27; Burn" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Burnin__Rubber_Crash_n__Burn-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Burnin__Rubber_Crash_n__Burn-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Burnin__Rubber_Crash_n__Burn-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Burnin&#x27; Rubber Crash n&#x27; Burn" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -254,7 +332,7 @@
     <div class="game-card" data-title="jet car jump" data-categories="arcade games|car games|casual games|driving games|endless runner games|racing games">
   <a href="../../game/jet-car-jump/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Jet_Car_Jump.png?lossy=2&amp;strip=1&amp;webp=1" alt="Jet Car Jump" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Jet_Car_Jump-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Jet_Car_Jump-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Jet_Car_Jump-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Jet Car Jump" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -267,7 +345,7 @@
     <div class="game-card" data-title="air traffic control: atc game" data-categories="casual games|puzzle games|simulation games|strategy games">
   <a href="../../game/air-traffic-control-atc-game/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Air_Traffic_Control__ATC_Game.png?lossy=2&amp;strip=1&amp;webp=1" alt="Air Traffic Control: ATC Game" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Air_Traffic_Control__ATC_Game-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Air_Traffic_Control__ATC_Game-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Air_Traffic_Control__ATC_Game-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Air Traffic Control: ATC Game" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -280,7 +358,7 @@
     <div class="game-card" data-title="funny kitty care" data-categories="casual games|dress up games|girl games|simulation games">
   <a href="../../game/funny-kitty-care/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Funny_Kitty_Care.png?lossy=2&amp;strip=1&amp;webp=1" alt="Funny Kitty Care" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Funny_Kitty_Care-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Funny_Kitty_Care-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Funny_Kitty_Care-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Funny Kitty Care" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -293,7 +371,7 @@
     <div class="game-card" data-title="my city star stable" data-categories="casual games|decoration games|dress up games|girl games|racing games|simulation games">
   <a href="../../game/my-city-star-stable/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/My_City_Star_Stable-1.png?lossy=2&amp;strip=1&amp;webp=1" alt="My City Star Stable" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/My_City_Star_Stable-1-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/My_City_Star_Stable-1-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/My_City_Star_Stable-1-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="My City Star Stable" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -306,7 +384,7 @@
     <div class="game-card" data-title="under the grave" data-categories="action games|arcade games|casual games|horror games|shooting games|trending games">
   <a href="../../game/under-the-grave/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Under_The_Grave.png?lossy=2&amp;strip=1&amp;webp=1" alt="Under The Grave" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Under_The_Grave-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Under_The_Grave-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Under_The_Grave-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Under The Grave" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -319,7 +397,7 @@
     <div class="game-card" data-title="prismo coloring" data-categories="trending games">
   <a href="../../game/prismo-coloring/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Prismo_Coloring.png?lossy=2&amp;strip=1&amp;webp=1" alt="Prismo Coloring" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Prismo_Coloring-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Prismo_Coloring-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Prismo_Coloring-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Prismo Coloring" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -332,7 +410,7 @@
     <div class="game-card" data-title="dead paradise: race shooter" data-categories="action games|car games|racing games|shooting games">
   <a href="../../game/dead-paradise-race-shooter/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Dead_Paradise__Race_Shooter.png?lossy=2&amp;strip=1&amp;webp=1" alt="Dead Paradise: Race Shooter" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Dead_Paradise__Race_Shooter-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Dead_Paradise__Race_Shooter-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Dead_Paradise__Race_Shooter-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Dead Paradise: Race Shooter" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -345,7 +423,7 @@
     <div class="game-card" data-title="subway surfers bali" data-categories="action games|arcade games|casual games|endless runner games">
   <a href="../../game/subway-surfers-bali/index.html">
     <div class="thumb">
-      <img data-src="https://cool77.com/img/subway-surfers-bali-small-100.webp" alt="Subway Surfers Bali" width="300" height="300" loading="lazy">
+      <img data-src="https://cool77.com/img/subway-surfers-bali-small-100-300x300.webp" data-srcset="https://cool77.com/img/subway-surfers-bali-small-100-150x150.webp 150w, https://cool77.com/img/subway-surfers-bali-small-100-300x300.webp 300w" sizes="(max-width:575px) 150px, 300px" alt="Subway Surfers Bali" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -358,7 +436,7 @@
     <div class="game-card" data-title="sweet world" data-categories="arcade games|casual games|puzzle games">
   <a href="../../game/sweet-world/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Sweet_World.png?lossy=2&amp;strip=1&amp;webp=1" alt="Sweet World" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Sweet_World-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Sweet_World-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Sweet_World-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Sweet World" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -371,7 +449,7 @@
     <div class="game-card" data-title="blue" data-categories="casual games|puzzle games">
   <a href="../../game/blue/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Blue.png?lossy=2&amp;strip=1&amp;webp=1" alt="Blue" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Blue-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Blue-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Blue-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Blue" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -384,7 +462,7 @@
     <div class="game-card" data-title="food fuse" data-categories="arcade games|casual games|cooking games|puzzle games">
   <a href="../../game/food-fuse/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Food_Fuse.png?lossy=2&amp;strip=1&amp;webp=1" alt="Food Fuse" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Food_Fuse-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Food_Fuse-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Food_Fuse-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Food Fuse" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -397,7 +475,7 @@
     <div class="game-card" data-title="stickman parkour 3" data-categories="action games|platformer games|stickman games">
   <a href="../../game/stickman-parkour-3/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Stickman_Parkour_3.png?lossy=2&amp;strip=1&amp;webp=1" alt="Stickman Parkour 3" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Stickman_Parkour_3-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Stickman_Parkour_3-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Stickman_Parkour_3-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Stickman Parkour 3" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -410,7 +488,7 @@
     <div class="game-card" data-title="bowling stars" data-categories="arcade games|casual games|sports games">
   <a href="../../game/bowling-stars/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Bowling_Stars.png?lossy=2&amp;strip=1&amp;webp=1" alt="Bowling Stars" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Bowling_Stars-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Bowling_Stars-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Bowling_Stars-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Bowling Stars" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -423,7 +501,7 @@
     <div class="game-card" data-title="t rex runner" data-categories="arcade games|casual games|endless runner games">
   <a href="../../game/t-rex-runner/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/T-Rex-Runner.png?lossy=2&amp;strip=1&amp;webp=1" alt="T Rex Runner" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/T-Rex-Runner-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/T-Rex-Runner-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/T-Rex-Runner-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="T Rex Runner" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -436,7 +514,7 @@
     <div class="game-card" data-title="bubble shooter" data-categories="arcade games|casual games|puzzle games">
   <a href="../../game/bubble-shooter/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Bubble_Shooter.png?lossy=2&amp;strip=1&amp;webp=1" alt="Bubble Shooter" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Bubble_Shooter-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Bubble_Shooter-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Bubble_Shooter-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Bubble Shooter" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -449,7 +527,7 @@
     <div class="game-card" data-title="idle money tree" data-categories="casual games|clicker games|simulation games">
   <a href="../../game/idle-money-tree/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Idle_Money_Tree.png?lossy=2&amp;strip=1&amp;webp=1" alt="Idle Money Tree" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Idle_Money_Tree-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Idle_Money_Tree-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Idle_Money_Tree-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Idle Money Tree" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -462,7 +540,7 @@
     <div class="game-card" data-title="gobattle 2" data-categories="2 player games|action games|casual games|multiplayer games">
   <a href="../../game/gobattle-2/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/GoBattle_2.png?lossy=2&amp;strip=1&amp;webp=1" alt="GoBattle 2" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/GoBattle_2-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/GoBattle_2-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/GoBattle_2-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="GoBattle 2" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -475,7 +553,7 @@
     <div class="game-card" data-title="among us" data-categories="casual games|multiplayer games|strategy games|trending games">
   <a href="../../game/among-us/index.html">
     <div class="thumb">
-      <img data-src="https://cool77.com/img/among-us-small-100.webp" alt="Among Us" width="300" height="300" loading="lazy">
+      <img data-src="https://cool77.com/img/among-us-small-100-300x300.webp" data-srcset="https://cool77.com/img/among-us-small-100-150x150.webp 150w, https://cool77.com/img/among-us-small-100-300x300.webp 300w" sizes="(max-width:575px) 150px, 300px" alt="Among Us" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -488,7 +566,7 @@
     <div class="game-card" data-title="alchemix - match 3" data-categories="casual games|puzzle games">
   <a href="../../game/alchemix-match-3/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Alchemix___Match_3-1.png?lossy=2&amp;strip=1&amp;webp=1" alt="Alchemix - Match 3" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Alchemix___Match_3-1-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Alchemix___Match_3-1-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Alchemix___Match_3-1-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Alchemix - Match 3" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -501,7 +579,7 @@
     <div class="game-card" data-title="ellie’s surprise birthday party" data-categories="casual games|cooking games|decoration games|dress up games|girl games|simulation games">
   <a href="../../game/ellies-surprise-birthday-party/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Ellie_s_Surprise_Birthday_Party.png?lossy=2&amp;strip=1&amp;webp=1" alt="Ellie’s Surprise Birthday Party" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Ellie_s_Surprise_Birthday_Party-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Ellie_s_Surprise_Birthday_Party-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Ellie_s_Surprise_Birthday_Party-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Ellie’s Surprise Birthday Party" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -514,7 +592,7 @@
     <div class="game-card" data-title="plunger" data-categories="action games|arcade games|casual games|puzzle games">
   <a href="../../game/plunger/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Plunger.png?lossy=2&amp;strip=1&amp;webp=1" alt="Plunger" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Plunger-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Plunger-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Plunger-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Plunger" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -527,7 +605,7 @@
     <div class="game-card" data-title="bricks" data-categories="arcade games|casual games|puzzle games">
   <a href="../../game/bricks/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Bricks.png?lossy=2&amp;strip=1&amp;webp=1" alt="Bricks" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Bricks-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Bricks-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Bricks-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Bricks" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>
@@ -540,7 +618,7 @@
     <div class="game-card" data-title="blumgi paintball" data-categories="2 player games|action games|multiplayer games|platformer games|shooting games">
   <a href="../../game/blumgi-paintball/index.html">
     <div class="thumb">
-      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Blumgi-Paintball.png?lossy=2&amp;strip=1&amp;webp=1" alt="Blumgi Paintball" width="300" height="300" loading="lazy">
+      <img data-src="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Blumgi-Paintball-300x300.png?lossy=2&amp;strip=1&amp;webp=1" data-srcset="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Blumgi-Paintball-150x150.png?lossy=2&amp;strip=1&amp;webp=1 150w, https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/Blumgi-Paintball-300x300.png?lossy=2&amp;strip=1&amp;webp=1 300w" sizes="(max-width:575px) 150px, 300px" alt="Blumgi Paintball" width="300" height="300" loading="lazy">
       <div class="thumb-placeholder">&#127918;</div>
       <div class="play-overlay"><span>&#9654;</span></div>
     </div>

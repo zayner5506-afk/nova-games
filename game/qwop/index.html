@@ -11,7 +11,619 @@
 <meta property="og:url" content="https://unblocked-games-platform.github.io/game/qwop/">
 <meta property="og:image" content="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/QWOP.png?lossy=2&amp;strip=1&amp;webp=1">
 <link rel="canonical" href="https://unblocked-games-platform.github.io/game/qwop/">
-<link rel="stylesheet" href="../../css/style.css">
+<style>/* Unblocked Games Platform - Dark Gaming Theme */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root {
+  --bg-primary: #0f0f1a;
+  --bg-secondary: #1a1a2e;
+  --bg-card: #16213e;
+  --bg-card-hover: #1a2744;
+  --accent-primary: #7c3aed;
+  --accent-secondary: #6366f1;
+  --accent-glow: rgba(124, 58, 237, 0.4);
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --border-color: #2d2d5e;
+  --success: #22c55e;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 4px 20px rgba(0,0,0,0.3);
+  --transition: 0.2s ease;
+}
+
+html { scroll-behavior: smooth }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a { color: var(--accent-primary); text-decoration: none; transition: color var(--transition) }
+a:hover { color: var(--accent-secondary) }
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(15, 15, 26, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.75rem 0;
+}
+
+.header-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.logo span { color: var(--accent-primary) }
+
+.search-box {
+  flex: 1;
+  min-width: 200px;
+  max-width: 500px;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.6rem 1rem 0.6rem 2.5rem;
+  border-radius: 50px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.search-box input:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.search-box input::placeholder { color: var(--text-muted) }
+
+.search-box::before {
+  content: '\1F50D';
+  position: absolute;
+  left: 0.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.85rem;
+  pointer-events: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--text-secondary);
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  transition: all var(--transition);
+}
+
+.nav-links a:hover, .nav-links a.active {
+  color: var(--text-primary);
+  background: var(--bg-card);
+}
+
+/* Main Container */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+/* Category Filter Tabs */
+.category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cat-tab {
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+
+.cat-tab:hover {
+  border-color: var(--accent-primary);
+  color: var(--text-primary);
+}
+
+.cat-tab.active {
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: #fff;
+}
+
+/* Game Grid */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 576px)  { .game-grid { grid-template-columns: repeat(3, 1fr) } }
+@media (min-width: 768px)  { .game-grid { grid-template-columns: repeat(4, 1fr) } }
+@media (min-width: 992px)  { .game-grid { grid-template-columns: repeat(5, 1fr) } }
+@media (min-width: 1200px) { .game-grid { grid-template-columns: repeat(6, 1fr) } }
+
+/* Game Card */
+.game-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.game-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px var(--accent-glow);
+  border-color: var(--accent-primary);
+}
+
+.game-card a { color: inherit; display: flex; flex-direction: column; height: 100% }
+
+.game-card .thumb {
+  position: relative;
+  padding-top: 100%;
+  background: var(--bg-secondary);
+  overflow: hidden;
+}
+
+.game-card .thumb img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.game-card:hover .thumb img { transform: scale(1.05) }
+
+.game-card .thumb .play-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: opacity var(--transition);
+  z-index: 2;
+}
+
+.game-card:hover .thumb .play-overlay { opacity: 1 }
+
+.play-overlay span {
+  width: 48px; height: 48px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.game-card .card-body {
+  padding: 0.65rem 0.75rem;
+  flex: 1;
+}
+
+.game-card .card-body h3 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.game-card .card-body .cat-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+/* Load More Button */
+.load-more-wrap { text-align: center; margin: 2rem 0 }
+
+.load-more-btn {
+  padding: 0.75rem 2.5rem;
+  border-radius: 50px;
+  border: 2px solid var(--accent-primary);
+  background: transparent;
+  color: var(--accent-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.load-more-btn:hover {
+  background: var(--accent-primary);
+  color: #fff;
+}
+
+/* Game Count */
+.results-info {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+/* ========== GAME PAGE ========== */
+
+.game-page-header {
+  margin-bottom: 1rem;
+}
+
+.game-page-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.game-page-header .breadcrumb {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.game-page-header .breadcrumb a { color: var(--text-secondary) }
+
+/* Game Frame Container */
+.game-frame-wrap {
+  position: relative;
+  background: #000;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.game-frame-wrap iframe {
+  display: block;
+  width: 100%;
+  height: 80vh;
+  border: none;
+  border-radius: 12px;
+}
+
+/* Click-to-Play Overlay */
+.game-play-overlay {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  background: #000;
+  cursor: pointer;
+}
+
+.game-poster {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.game-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+  z-index: 2;
+}
+
+.game-play-btn svg {
+  width: 38px;
+  height: 38px;
+  color: #333;
+  margin-left: 4px;
+}
+
+.game-play-btn:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 6px 30px rgba(124, 58, 237, 0.5);
+}
+
+.game-play-btn:active {
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
+.game-poster-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+@media (max-width: 575px) {
+  .game-play-btn { width: 64px; height: 64px }
+  .game-play-btn svg { width: 30px; height: 30px }
+  .game-poster-title { font-size: 0.9rem; padding: 15px }
+}
+
+.fullscreen-btn {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  padding: 0.5rem 1rem;
+  background: rgba(124, 58, 237, 0.9);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: background var(--transition);
+}
+
+.fullscreen-btn:hover { background: var(--accent-secondary) }
+
+/* Exit fullscreen button: small, top-right, red */
+.game-frame-wrap:fullscreen .fullscreen-btn,
+.game-frame-wrap:-webkit-full-screen .fullscreen-btn {
+  top: 10px;
+  left: 10px;
+  right: auto;
+  bottom: auto;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.75rem;
+  background: rgba(220, 38, 38, 0.9);
+  border-radius: 6px;
+}
+
+.game-frame-wrap:fullscreen .fullscreen-btn:hover,
+.game-frame-wrap:-webkit-full-screen .fullscreen-btn:hover {
+  background: rgba(239, 68, 68, 1);
+}
+
+/* Real browser fullscreen */
+.game-frame-wrap:fullscreen,
+.game-frame-wrap:-webkit-full-screen {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  padding: 0 !important;
+  background: #000;
+}
+
+.game-frame-wrap:fullscreen iframe,
+.game-frame-wrap:-webkit-full-screen iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 0 !important;
+}
+
+/* Game Page Description (compact, no stretch) */
+.game-description {
+  background: var(--bg-secondary);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--border-color);
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1.5rem;
+}
+
+.game-description h2 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--text-primary);
+  width: 100%;
+}
+
+.game-description p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0.25rem 0 0;
+}
+
+.game-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+  width: 100%;
+}
+
+.game-meta .tag {
+  padding: 0.3rem 0.75rem;
+  background: var(--bg-card);
+  border-radius: 50px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+
+/* Related / More Games Sections (full-width grids) */
+.more-games-section {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.more-games-section h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* ========== CATEGORY PAGE ========== */
+
+.category-header {
+  margin-bottom: 1.5rem;
+}
+
+.category-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.category-header p {
+  color: var(--text-secondary);
+  max-width: 700px;
+  line-height: 1.7;
+}
+
+/* ========== FOOTER ========== */
+
+.site-footer {
+  margin-top: 3rem;
+  padding: 2rem 1rem;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.site-footer .footer-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a { color: var(--text-secondary); font-size: 0.8rem }
+.footer-links a:hover { color: var(--accent-primary) }
+
+/* ========== HERO SECTION ========== */
+
+.hero {
+  text-align: center;
+  padding: 2rem 0 1.5rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero p {
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+/* No results */
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+/* Placeholder image for missing thumbnails */
+.thumb-placeholder {
+  position: absolute;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--bg-secondary), var(--bg-card));
+  font-size: 2rem;
+  z-index: 0;
+}
+
+/* Show placeholder only when no image */
+.thumb--no-img .thumb-placeholder { display: flex }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px }
+::-webkit-scrollbar-track { background: var(--bg-primary) }
+::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 4px }
+::-webkit-scrollbar-thumb:hover { background: var(--accent-primary) }
+
+/* Mobile adjustments */
+@media (max-width: 575px) {
+  .hero h1 { font-size: 1.5rem }
+  .search-box { min-width: 150px }
+  .game-frame-wrap iframe { height: 60vh }
+  .header-inner { gap: 0.5rem }
+  .logo { font-size: 1.1rem }
+  .nav-links { display: none }
+  .category-tabs { gap: 0.35rem }
+  .cat-tab { font-size: 0.75rem; padding: 0.3rem 0.75rem }
+}
+</style>
 <link rel="preload" as="image" href="https://b4143819.smushcdn.com/4143819/wp-content/uploads/2025/08/QWOP.png?lossy=2&amp;strip=1&amp;webp=1" fetchpriority="high">
 <script type="application/ld+json">
 [
@@ -53,10 +665,10 @@
     },
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": 4.5,
+      "ratingValue": 4.0,
       "bestRating": "5",
       "worstRating": "1",
-      "ratingCount": 405
+      "ratingCount": 380
     }
   },
   {
@@ -641,6 +1253,370 @@
     <p>&copy; 2026 Unblocked Games Platform. All games are property of their respective owners.</p>
   </div>
 </footer>
-<script src="../../js/main.js"></script>
+<script>/* Unblocked Games Platform - Main JS */
+(function() {
+  'use strict';
+
+  /* ========== Lazy Image Loading ========== */
+  var lazyObserver = null;
+
+  function loadImage(img) {
+    if (!img.dataset.src) return;
+    // Set srcset first if available, then src
+    if (img.dataset.srcset) {
+      img.srcset = img.dataset.srcset;
+      img.removeAttribute('data-srcset');
+    }
+    img.src = img.dataset.src;
+    img.removeAttribute('data-src');
+    img.onload = function() { img.classList.add('loaded'); };
+    img.onerror = function() {
+      // If resized version fails, try the original full-size image
+      var origSrc = img.src.replace(/-\d+x\d+\./, '.');
+      if (origSrc !== img.src) {
+        img.srcset = '';
+        img.src = origSrc;
+        img.onerror = function() {
+          img.style.display = 'none';
+          var placeholder = img.parentElement.querySelector('.thumb-placeholder');
+          if (placeholder) placeholder.style.display = 'flex';
+        };
+        return;
+      }
+      img.style.display = 'none';
+      var placeholder = img.parentElement.querySelector('.thumb-placeholder');
+      if (placeholder) placeholder.style.display = 'flex';
+    };
+  }
+
+  function initLazyImages() {
+    if ('IntersectionObserver' in window && !lazyObserver) {
+      lazyObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            loadImage(entry.target);
+            lazyObserver.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '300px' });
+    }
+    observeNewImages();
+  }
+
+  function observeNewImages() {
+    var images = document.querySelectorAll('img[data-src]');
+    if (!images.length) return;
+
+    if (lazyObserver) {
+      images.forEach(function(img) {
+        // Only observe images whose parent card is visible
+        var card = img.closest('.game-card');
+        if (!card || !card.classList.contains('hidden-by-pagination')) {
+          lazyObserver.observe(img);
+        }
+      });
+    } else {
+      // Fallback: load all visible images directly
+      images.forEach(function(img) {
+        var card = img.closest('.game-card');
+        if (!card || !card.classList.contains('hidden-by-pagination')) {
+          loadImage(img);
+        }
+      });
+    }
+  }
+
+  /* ========== Search Filter ========== */
+  function isHomepage() {
+    return !!document.getElementById('game-grid');
+  }
+
+  function getHomeUrl() {
+    // Find the home link in the header to get the correct relative path
+    var homeLink = document.querySelector('.logo');
+    return homeLink ? homeLink.getAttribute('href') : '/';
+  }
+
+  function initSearch() {
+    var searchInput = document.getElementById('search-input');
+    if (!searchInput) return;
+
+    // On non-homepage: Enter key navigates to homepage with query
+    if (!isHomepage()) {
+      searchInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+          var query = searchInput.value.trim();
+          if (query) {
+            var home = getHomeUrl();
+            window.location.href = home + '?q=' + encodeURIComponent(query);
+          }
+        }
+      });
+      return;
+    }
+
+    // Homepage: live filtering
+    var cards = document.querySelectorAll('.game-card');
+    var noResults = document.getElementById('no-results');
+    var resultsInfo = document.getElementById('results-info');
+    var debounceTimer;
+
+    function filterCards(query) {
+      var visibleCount = 0;
+
+      cards.forEach(function(card) {
+        var title = (card.dataset.title || '').toLowerCase();
+        var cats = (card.dataset.categories || '').toLowerCase();
+        var match = !query || title.indexOf(query) !== -1 || cats.indexOf(query) !== -1;
+        card.style.display = match ? '' : 'none';
+        if (match) visibleCount++;
+      });
+
+      if (noResults) {
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+      if (resultsInfo) {
+        if (query) {
+          resultsInfo.textContent = visibleCount + ' game' + (visibleCount !== 1 ? 's' : '') + ' found';
+        } else {
+          resultsInfo.textContent = '';
+        }
+      }
+
+      var loadMoreBtn = document.getElementById('load-more-btn');
+      if (loadMoreBtn) {
+        loadMoreBtn.style.display = query ? 'none' : '';
+      }
+      if (query) {
+        cards.forEach(function(card) {
+          if (card.style.display !== 'none') {
+            card.classList.remove('hidden-by-pagination');
+          }
+        });
+        scheduleObserve();
+      } else {
+        resetPagination();
+      }
+    }
+
+    searchInput.addEventListener('input', function() {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(function() {
+        filterCards(searchInput.value.toLowerCase().trim());
+      }, 150);
+    });
+
+    // Check for ?q= parameter on page load
+    var params = new URLSearchParams(window.location.search);
+    var q = params.get('q');
+    if (q) {
+      searchInput.value = q;
+      filterCards(q.toLowerCase().trim());
+    }
+  }
+
+  /* ========== Category Tab Filtering ========== */
+  function initCategoryTabs() {
+    var tabs = document.querySelectorAll('.cat-tab');
+    if (!tabs.length) return;
+
+    var cards = document.querySelectorAll('.game-card');
+    var noResults = document.getElementById('no-results');
+
+    tabs.forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        // Update active tab
+        tabs.forEach(function(t) { t.classList.remove('active'); });
+        tab.classList.add('active');
+
+        var category = tab.dataset.category;
+        var visibleCount = 0;
+
+        cards.forEach(function(card) {
+          var cats = (card.dataset.categories || '').toLowerCase();
+          var match = category === 'all' || cats.indexOf(category.toLowerCase()) !== -1;
+          card.style.display = match ? '' : 'none';
+          if (match) visibleCount++;
+        });
+
+        if (noResults) {
+          noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+        }
+
+        // Clear search when switching categories
+        var searchInput = document.getElementById('search-input');
+        if (searchInput) searchInput.value = '';
+
+        // Reset pagination for new filter
+        resetPagination();
+      });
+    });
+  }
+
+  /* ========== Load More Pagination ========== */
+  var ITEMS_PER_PAGE = 60;
+  var currentlyShown = 0;
+
+  function resetPagination() {
+    var cards = document.querySelectorAll('.game-card');
+    var visibleCards = [];
+    cards.forEach(function(card) {
+      if (card.style.display !== 'none') {
+        visibleCards.push(card);
+      }
+    });
+
+    currentlyShown = 0;
+    visibleCards.forEach(function(card) {
+      card.classList.add('hidden-by-pagination');
+    });
+
+    showMore(visibleCards);
+  }
+
+  function showMore(cards) {
+    if (!cards) {
+      cards = [];
+      document.querySelectorAll('.game-card').forEach(function(card) {
+        if (card.style.display !== 'none') {
+          cards.push(card);
+        }
+      });
+    }
+
+    var end = Math.min(currentlyShown + ITEMS_PER_PAGE, cards.length);
+    for (var i = currentlyShown; i < end; i++) {
+      cards[i].classList.remove('hidden-by-pagination');
+    }
+    currentlyShown = end;
+
+    var loadMoreBtn = document.getElementById('load-more-btn');
+    if (loadMoreBtn) {
+      loadMoreBtn.style.display = currentlyShown >= cards.length ? 'none' : '';
+    }
+
+    // Wait for browser to layout the newly visible cards, then observe their images
+    scheduleObserve();
+  }
+
+  function scheduleObserve() {
+    requestAnimationFrame(function() {
+      observeNewImages();
+    });
+  }
+
+  function initLoadMore() {
+    var loadMoreBtn = document.getElementById('load-more-btn');
+    if (!loadMoreBtn) return;
+
+    // Initial load
+    resetPagination();
+
+    loadMoreBtn.addEventListener('click', function() {
+      showMore();
+    });
+  }
+
+  /* ========== Click-to-Play Game Launcher ========== */
+  function initGameLauncher() {
+    var overlay = document.getElementById('game-play-overlay');
+    var wrap = document.getElementById('game-frame-wrap');
+    if (!overlay || !wrap) return;
+
+    overlay.addEventListener('click', function() {
+      var gameUrl = wrap.dataset.src;
+      if (!gameUrl) return;
+
+      // Instant visual feedback
+      var playBtn = overlay.querySelector('.game-play-btn');
+      if (playBtn) {
+        playBtn.style.transform = 'translate(-50%, -50%) scale(0.9)';
+        playBtn.style.opacity = '0.7';
+      }
+
+      // Yield to paint, then do heavy work
+      requestAnimationFrame(function() {
+        setTimeout(function() {
+          // Remove overlay
+          overlay.remove();
+
+          // Create iframe
+          var iframe = document.createElement('iframe');
+          iframe.id = 'game-frame';
+          iframe.className = 'game-iframe';
+          iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; gamepad *;');
+          iframe.setAttribute('allowfullscreen', '');
+          iframe.setAttribute('title', document.title);
+
+          // Insert iframe before fullscreen button
+          var fsBtn = document.getElementById('fullscreen-btn');
+          wrap.insertBefore(iframe, fsBtn);
+
+          // Set src after DOM insertion
+          iframe.src = gameUrl;
+
+          // Show fullscreen button
+          if (fsBtn) fsBtn.style.display = '';
+
+          // Smooth scroll to game
+          wrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 0);
+      });
+    });
+  }
+
+  /* ========== Fullscreen Toggle (real browser fullscreen) ========== */
+  function initFullscreen() {
+    var btn = document.getElementById('fullscreen-btn');
+    var wrap = document.getElementById('game-frame-wrap');
+    if (!btn || !wrap) return;
+
+    btn.addEventListener('click', function() {
+      var isFS = document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement;
+      if (isFS) {
+        (document.exitFullscreen || document.webkitExitFullscreen || document.msExitFullscreen).call(document);
+      } else {
+        var rfs = wrap.requestFullscreen || wrap.webkitRequestFullscreen || wrap.msRequestFullscreen;
+        if (rfs) rfs.call(wrap);
+      }
+    });
+
+    // Update button text and class when fullscreen changes
+    function onFSChange() {
+      var isFS = document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement;
+      if (isFS) {
+        wrap.classList.add('fullscreen');
+        btn.textContent = '\u2716 Exit Fullscreen';
+      } else {
+        wrap.classList.remove('fullscreen');
+        btn.textContent = '\u26F6 Fullscreen';
+      }
+    }
+
+    document.addEventListener('fullscreenchange', onFSChange);
+    document.addEventListener('webkitfullscreenchange', onFSChange);
+    document.addEventListener('MSFullscreenChange', onFSChange);
+  }
+
+  /* ========== Hidden by pagination CSS ========== */
+  function injectPaginationCSS() {
+    var style = document.createElement('style');
+    style.textContent = '.game-card.hidden-by-pagination { display: none !important; }';
+    document.head.appendChild(style);
+  }
+
+  /* ========== Init ========== */
+  document.addEventListener('DOMContentLoaded', function() {
+    injectPaginationCSS();
+    initLazyImages();
+    initSearch();
+    initCategoryTabs();
+    initLoadMore();
+    initGameLauncher();
+    initFullscreen();
+  });
+
+})();
+</script>
 </body>
 </html>

@@ -408,6 +408,24 @@ a:hover { color: var(--accent-secondary) }
 
 .fullscreen-btn:hover { background: var(--accent-secondary) }
 
+/* Exit fullscreen button: small, top-right, red */
+.game-frame-wrap:fullscreen .fullscreen-btn,
+.game-frame-wrap:-webkit-full-screen .fullscreen-btn {
+  top: 10px;
+  left: 10px;
+  right: auto;
+  bottom: auto;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.75rem;
+  background: rgba(220, 38, 38, 0.9);
+  border-radius: 6px;
+}
+
+.game-frame-wrap:fullscreen .fullscreen-btn:hover,
+.game-frame-wrap:-webkit-full-screen .fullscreen-btn:hover {
+  background: rgba(239, 68, 68, 1);
+}
+
 /* Real browser fullscreen */
 .game-frame-wrap:fullscreen,
 .game-frame-wrap:-webkit-full-screen {
